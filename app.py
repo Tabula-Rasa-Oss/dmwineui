@@ -133,9 +133,8 @@ def main():
         st.text("")
         st.markdown("### **Select Mode:**")
         select_mode = []
-
         modes_df = pd.DataFrame(['Choose', 'Input version', 'Slider version'])
-        select_mode.append(st.selectbox('', modes_df))
+        select_mode.append(st.selectbox('Select input mode', modes_df))
     
     if select_mode[0] == 'Input version':
         inputversion()
