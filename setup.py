@@ -5,7 +5,7 @@ with open('requirements.txt') as f:
     content = f.readlines()
 requirements = [x.strip() for x in content if 'git+' not in x]
 
-setup(name='yourwineui',
+setup(name='dmwineui',
       version="1.0",
       description="Project Red Wine Quality Prediction Web App",
       packages=find_packages(),
